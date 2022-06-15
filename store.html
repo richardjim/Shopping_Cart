@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="store.js" async></script>
+</head>
+
+<body>
+    <section class="container content-section">
+        <h2 class="section-header" onclick="myFunction()" type="button">Product Cart |(<input type="text" id="number"
+                value="0" />)
+        </h2>
+        </h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <img class="shop-item-image" src="Images/92910_1537476925.webp">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Bag</span>
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="Images/jean_sleeve.webp">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Jeans Sleeve</span>
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="Images/samsung.webp">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Samsung Smartphone</span>
+                    <span class="shop-item-price">$79.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="Images/Mtn_router.webp">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Mtn Hyplink/Router</span>
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="Images/cursor.webp">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Wireless Controller</span>
+                    <span class="shop-item-price">$59.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <img class="shop-item-image" src="Images/headset.webp">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Headset</span>
+                    <span class="shop-item-price">$34.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- <div class="shop-item">
+                    <span class="shop-item-title">Gown Dress</span>
+                    <img class="shop-item-image" src="Images/gown_dress.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$15.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div> -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/call of duty.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Activision Call Of Duty</span>
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/violin.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Violin</span>
+                        <span class="shop-item-price">$17.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/vintage.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Mens Vintage</span>
+                        <span class="shop-item-price">$20.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/white sneaker.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">White Sneaker</span>
+                        <span class="shop-item-price">$30.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/unisex sweatshirt.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Sweatshirt</span>
+                        <span class="shop-item-price">$25.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/rubic cube.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Rubic Cube</span>
+                        <span class="shop-item-price">$17.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/sweatshirt.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Sweatshirt IV</span>
+                        <span class="shop-item-price">$13.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/gown_dress.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Plain Dress</span>
+                        <span class="shop-item-price">$20.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/Adjustable Table.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Adjustable Table</span>
+                        <span class="shop-item-price">$45.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/nokia touch.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Nokia Touch</span>
+                        <span class="shop-item-price">$18.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/swirlchair.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Swirl Chair</span>
+                        <span class="shop-item-price">$80.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="Images/laptop table.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-title">Laptop Table</span>
+                        <span class="shop-item-price">$40.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="myDIV">
+        <div class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <!-- <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div> -->
+
+            <div class="totals">
+
+                <div class="coupon">
+                    <h5>Apply Coupon to discount!</h5>
+                    <input class="coupon-code" type="text" placeholder="Coupon Code"><span class="app">Apply</span>
+                    <br>
+                    <button class="continue">Continue Shopping</button>
+                </div>
+                <div class="checkout">
+                    <!-- <div class="totals-item">
+                    <label>Subtotal</label>
+                    <div class="totals-value" id="cart-subtotal">71.97</div>
+                </div> -->
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">Process to Checkout</button>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <!-- <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> -->
+    </section>
+    <!-- <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Generics</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer> -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
