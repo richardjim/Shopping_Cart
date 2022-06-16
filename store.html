@@ -13,7 +13,7 @@
         <h2 class="section-header" onclick="myFunction()" type="button">Product Cart |(<input type="text" id="number"
                 value="0" />)
         </h2>
-        </h2>
+
         <div class="shop-items">
             <div class="shop-item">
                 <img class="shop-item-image" src="Images/92910_1537476925.webp">
@@ -174,11 +174,14 @@
     </section>
     <section id="myDIV">
         <div class="container content-section">
-            <h2 class="section-header">CART</h2>
+            <h2 class="section-header">Cart Details</h2>
             <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                <span class="cart-item cart-header cart-column">PRODUCT IMAGE</span>
+                <span class="cart-name cart-header cart-column">PRODUCT NAME</span>
+                <span class="cart-quantity cart-header cart-column" style="margin-left: 2rem; ">QUANTITY</span>
+                <span class="cart-price cart-header cart-column">PRODUCT PRICE</span>
+                <span class="cart-item cart-header cart-column"
+                    style="margin-left: 2rem; padding-right: 2rem;">ACTION</span>
             </div>
             <div class="cart-items">
             </div>
@@ -237,6 +240,7 @@
     <script>
         function myFunction() {
             var x = document.getElementById("myDIV");
+            let y = document.getElementsByClassName("")
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {

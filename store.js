@@ -43,19 +43,21 @@ function purchaseClicked() {
 // function removeCartItem(event) {
 //     var buttonClicked = event.target
 //     buttonClicked.parentElement.parentElement.remove()
-            
+
 //     updateCartTotal()
 // }
 var value = parseInt(document.getElementById('number').value, 20);
 document.getElementById('number').value = value;
+
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
-        value = isNaN(value) ? 0 : value;
-        value--;
-        document.getElementById('number').value = value;
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('number').value = value;
     updateCartTotal()
 }
+
 function quantityChanged(event) {
     var input = event.target
     if (isNaN(input.value) || input.value <= 0) {
@@ -86,21 +88,25 @@ function addItemToCart(title, price, imageSrc) {
     // var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     // for (var i = 0; i < cartItemNames.length; i++) {
     //     if (cartItemNames[i].innerText == title) {
-          
+
     //         return
     //     }
     // }
     value = isNaN(value) ? 0 : value;
-        value++;
-        document.getElementById('number').value = value;
+    value++;
+    document.getElementById('number').value = value;
     var cartRowContents = `
         <div class="cart-item cart-column">
             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-            <span class="cart-item-title">${title}</span>
+        </div>
+        <span class="cart-item-title cart-column">${title}</span>
+        
+        <div class="cart-quantity cart-column" >
+            <input class="cart-quantity-input" type="number" value="1">
+          
         </div>
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1">
             <button class="btn btn-danger" type="button">REMOVE</button>
         </div>`
     cartRow.innerHTML = cartRowContents
@@ -124,22 +130,22 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
     // document.getElementsByClassName('badge')[0].innerHTML = parseInt(badge);
- }
-
-
-
- 
-const removeCartItemButtons = document.querySelectorAll('btn-danger')
-console.log(removeCartItemButtons)
-for (var i= 0; i < removeCartItemButtons; i++){
-var button = removeCartItemButtons[i]
-button.addEventListener('click',function() {
-    console.log('first')
-})
-
-
-
 }
+
+
+
+
+// const removeCartItemButtons = document.querySelectorAll('btn-danger')
+// console.log(removeCartItemButtons)
+// for (var i = 0; i < removeCartItemButtons; i++) {
+//     var button = removeCartItemButtons[i]
+//     button.addEventListener('click', function () {
+//         console.log('first')
+//     })
+
+
+
+// }
 
 // var tab1 = document.getElementById("ui-id-1");
 // var tab2 = document.getElementById("ui-id-2");
